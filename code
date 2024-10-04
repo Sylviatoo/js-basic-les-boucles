@@ -28,10 +28,9 @@ const hiddenCode = "XXXXXXXXXXXXXXXXXXXXXXXXXXXCXXXXXXXOXXXXXDXXXXXXXXXXXXXXXEXX
 let revealedCode =[]
 
 for (i=0; i <hiddenCode.length;i++){
-     if (hiddenCode[i] !== "X" && parseInt(hiddenCode[i] % 2) !== 0){
+     if (hiddenCode[i] !== "X" && parseInt(hiddenCode[i] % 2 ===0) !== 0){
          revealedCode.push(hiddenCode[i])
-    } else if (hiddenCode[i] === "X"){
-     }
+    }
 }
 
 console.log(revealedCode);
